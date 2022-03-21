@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from './logo.svg';
+import _ from 'lodash'
 import './App.css';
 
 function App() {
@@ -18,6 +19,9 @@ function App() {
         >
           Learn React
         </a>
+        <p>
+          {_.camelCase('hello world')}
+        </p>
       </header>
     </div>
   );
